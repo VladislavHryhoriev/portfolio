@@ -1,0 +1,34 @@
+{
+  "HomePage": {
+    "title": "Привіт, я [Ваше Ім'я]",
+    "description": "Full-stack розробник з пристрастю до створення сучасних веб-додатків",
+    "viewProjects": "Мої проекти",
+    "contactMe": "Зв'язатися",
+    "featuredProjects": "Вибрані проекти",
+    "learnMore": "Детальніше",
+    "skills": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "React, Next.js, TypeScript, Tailwind CSS"
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "Node.js, Express, PostgreSQL, MongoDB"
+      },
+      "devops": {
+        "title": "DevOps",
+        "description": "Docker, AWS, CI/CD, Kubernetes"
+      }
+    },
+    "projects": {
+      "project1": {
+        "title": "Проект 1",
+        "description": "Короткий опис першого проекту"
+      },
+      "project2": {
+        "title": "Проект 2",
+        "description": "Короткий опис другого проекту"
+      }
+    }
+  }
+}

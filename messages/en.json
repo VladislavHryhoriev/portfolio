@@ -1,0 +1,34 @@
+{
+  "HomePage": {
+    "title": "Hi, I'm [Your Name]",
+    "description": "Full-stack developer passionate about building modern web applications",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me",
+    "featuredProjects": "Featured Projects",
+    "learnMore": "Learn More",
+    "skills": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "React, Next.js, TypeScript, Tailwind CSS"
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "Node.js, Express, PostgreSQL, MongoDB"
+      },
+      "devops": {
+        "title": "DevOps",
+        "description": "Docker, AWS, CI/CD, Kubernetes"
+      }
+    },
+    "projects": {
+      "project1": {
+        "title": "Project 1",
+        "description": "Brief description of the first project"
+      },
+      "project2": {
+        "title": "Project 2",
+        "description": "Brief description of the second project"
+      }
+    }
+  }
+}
