@@ -1,12 +1,22 @@
 {
   "HomePage": {
-    "title": "Hi, I'm [Your Name]",
-    "description": "Full-stack developer passionate about building modern web applications",
-    "viewProjects": "View Projects",
-    "contactMe": "Contact Me",
-    "featuredProjects": "Featured Projects",
-    "learnMore": "Learn More",
+    "menu": {
+      "start": "Start",
+      "about": "About",
+      "work": "Work",
+      "contacts": "Contacts",
+      "cv": "CV"
+    },
+    "hero": {
+      "title": "Vladislav Hryhoriev",
+      "description": "Full-stack developer passionate about building modern web applications",
+      "viewProjects": "View Projects",
+      "contactMe": "Contact Me",
+      "featuredProjects": "Featured Projects",
+      "learnMore": "Learn More"
+    },
     "skills": {
+      "title": "Skills",
       "frontend": {
         "title": "Frontend",
         "description": "React, Next.js, TypeScript, Tailwind CSS"

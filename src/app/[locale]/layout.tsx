@@ -1,6 +1,13 @@
+import { routing } from "@/i18n/routing";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
+import "../globals.css";
+import { Quicksand } from "next/font/google";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export default async function LocaleLayout({
   children,
@@ -13,8 +20,8 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) notFound();
 
   return (
-    <html lang={locale}>
-      <body>
+    <html lang={locale} className="dark scroll-smooth">
+      <body className={quicksand.className}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
