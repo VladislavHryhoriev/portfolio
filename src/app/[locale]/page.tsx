@@ -1,9 +1,12 @@
 "use client";
+import About from "@/components/layout/about";
+import Contacts from "@/components/layout/contacts";
 import Header from "@/components/layout/header";
 import Start from "@/components/layout/start";
+import Work from "@/components/layout/work";
 import DELAY from "@/constants/DELAY";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 export default function HomePage() {
@@ -23,7 +26,9 @@ export default function HomePage() {
     }
   }, [isVisible]);
 
-  useEffect(() => window.scrollTo({ top: 0, behavior: "instant" }), []);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     if (startInView) setActiveSection("#start");
@@ -54,20 +59,20 @@ export default function HomePage() {
       )}
       <Header activeSection={activeSection} />
 
-      <div ref={startRef} id="start">
-        <Start />
-      </div>
-
-      <div ref={workRef} id="work" className="h-[100vh]">
-        Work Section
-      </div>
-
-      <div ref={aboutRef} id="about" className="h-[100vh]">
-        About Section
-      </div>
-
-      <div ref={contactsRef} id="contacts" className="h-[100vh]">
-        Contacts Section
+      {/* Секции */}
+      <div className="*:min-h-screen">
+        <div ref={startRef} id="start">
+          <Start />
+        </div>
+        <div ref={workRef} id="work">
+          <Work />
+        </div>
+        <div ref={aboutRef} id="about">
+          <About />
+        </div>
+        <div ref={contactsRef} id="contacts">
+          <Contacts />
+        </div>
       </div>
     </div>
   );

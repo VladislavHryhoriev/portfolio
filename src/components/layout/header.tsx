@@ -4,19 +4,16 @@ import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { RiTelegram2Fill } from "react-icons/ri";
-import { FC } from "react";
 
-interface HeaderProps {
+interface Props {
   activeSection: string;
 }
 
-const Header: FC<HeaderProps> = ({ activeSection }) => {
+const Header = ({ activeSection }: Props) => {
   const t = useTranslations("HomePage");
   const { scrollY } = useScroll();
 
-  const headerBg = useTransform(scrollY, [0, 100], ["#0000", "#000a"]);
+  const headerBg = useTransform(scrollY, [0, 100], ["#0000", "#030712aa"]);
   const headerBlur = useTransform(
     scrollY,
     [0, 100],
@@ -33,7 +30,7 @@ const Header: FC<HeaderProps> = ({ activeSection }) => {
   const headerShadow = useTransform(
     scrollY,
     [0, 100],
-    ["0 0 40px 10px #0000", "0 0 40px 10px #000f"],
+    ["0 0 40px 10px #0000", "0 0 40px 10px #030712ff"],
   );
 
   const navigation = [
@@ -112,26 +109,6 @@ const Header: FC<HeaderProps> = ({ activeSection }) => {
                 </Link>
               ))}
             </div>
-            {/* <div className="flex items-center gap-2 text-2xl">
-              <Link
-                href="tg://resolve?domain=VladislavHryhoriev"
-                className="hover:text-red-400"
-              >
-                <RiTelegram2Fill />
-              </Link>
-              <Link
-                href="https://github.com/VladislavHryhoriev"
-                className="hover:text-red-400"
-              >
-                <FaGithub />
-              </Link>
-              <Link
-                href="https://linkedin.com/in/vladislavhryhoriev"
-                className="hover:text-red-400"
-              >
-                <FaLinkedin />
-              </Link>
-            </div> */}
           </div>
         </motion.div>
       </div>

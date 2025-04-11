@@ -7,13 +7,18 @@
       "contacts": "Contacts",
       "cv": "CV"
     },
-    "hero": {
+    "start": {
       "title": "Vladislav Hryhoriev",
       "description": "Full-stack developer passionate about building modern web applications",
       "viewProjects": "View Projects",
       "contactMe": "Contact Me",
       "featuredProjects": "Featured Projects",
       "learnMore": "Learn More"
+    },
+    "work": {
+      "title": "Projects",
+      "description": "Here are some of my projects",
+      "viewProject": "View Project"
     },
     "skills": {
       "title": "Skills",
@@ -28,16 +33,6 @@
       "devops": {
         "title": "DevOps",
         "description": "Docker, AWS, CI/CD, Kubernetes"
-      }
-    },
-    "projects": {
-      "project1": {
-        "title": "Project 1",
-        "description": "Brief description of the first project"
-      },
-      "project2": {
-        "title": "Project 2",
-        "description": "Brief description of the second project"
       }
     }
   }

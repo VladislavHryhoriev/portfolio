@@ -1,8 +1,8 @@
 import { routing } from "@/i18n/routing";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { Quicksand } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
-import { Quicksand } from "next/font/google";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
