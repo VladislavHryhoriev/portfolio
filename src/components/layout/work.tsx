@@ -64,7 +64,7 @@ const Work = () => {
                   href={project.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:bg-pink-600"
+                  className="hover:bg-pink-600 active:bg-pink-600"
                 >
                   <FaGlobe className="size-5" />
                   <span>Website</span>
@@ -73,7 +73,7 @@ const Work = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:bg-purple-600"
+                  className="hover:bg-purple-600 active:bg-purple-600"
                 >
                   <FaGithub className="size-5" />
                   <span>GitHub</span>
