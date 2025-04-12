@@ -60,19 +60,19 @@ export default function HomePage() {
       <Header activeSection={activeSection} />
 
       {/* Секции */}
-      <div className="*:min-h-screen">
-        <div ref={startRef} id="start">
+      <div className="">
+        <div ref={startRef} id="start" className="bg-background">
           <Start />
         </div>
-        <div ref={workRef} id="work">
+        <div ref={workRef} id="work" className="bg-background">
           <Work />
         </div>
-        <div ref={aboutRef} id="about">
+        <div ref={aboutRef} id="about" className="bg-background">
           <About />
         </div>
-        <div ref={contactsRef} id="contacts">
+        <footer ref={contactsRef} id="contacts" className="h-screen">
           <Contacts />
-        </div>
+        </footer>
       </div>
     </div>
   );

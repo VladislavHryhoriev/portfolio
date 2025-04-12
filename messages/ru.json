@@ -1,35 +1,29 @@
 {
   "HomePage": {
-    "title": "Привет, я [Ваше Имя]",
-    "description": "Full-stack разработчик с страстью к созданию современных веб-приложений",
-    "viewProjects": "Мои проекты",
-    "contactMe": "Связаться",
-    "featuredProjects": "Избранные проекты",
-    "learnMore": "Подробнее",
-    "skills": {
-      "title": "Навыки",
-      "frontend": {
-        "title": "Frontend",
-        "description": "React, Next.js, TypeScript, Tailwind CSS"
-      },
-      "backend": {
-        "title": "Backend",
-        "description": "Node.js, Express, PostgreSQL, MongoDB"
-      },
-      "devops": {
-        "title": "DevOps",
-        "description": "Docker, AWS, CI/CD, Kubernetes"
-      }
+    "menu": {
+      "start": "Начать",
+      "about": "О сайте",
+      "work": "Работа",
+      "contacts": "Контакты",
+      "cv": "CV"
     },
-    "projects": {
-      "project1": {
-        "title": "Проект 1",
-        "description": "Краткое описание первого проекта"
-      },
-      "project2": {
-        "title": "Проект 2",
-        "description": "Краткое описание второго проекта"
-      }
+    "start": {
+      "greeting": "Здравствуйте, я",
+      "title": "Владислав Григорьев",
+      "description": "Full-stack разработчик, увлеченный созданием современных веб-приложений",
+      "viewProjects": "Посмотреть проекты",
+      "contactMe": "Свяжитесь со мной",
+      "featuredProjects": "Проекты",
+      "learnMore": "Узнать больше"
+    },
+    "work": {
+      "title": "Проекты",
+      "description": "Здесь представлены некоторые из моих проектов",
+      "viewProject": "Посмотреть проект"
+    },
+    "about": {
+      "title": "Обо мне",
+      "description": "Frontend разработчик с сильными навыками в React, Next.js и современных UI инструментах, таких как Tailwind CSS. Я создаю отзывчивые, высокопроизводительные интерфейсы с чистым кодом и тщательной архитектурой. Я люблю решать сложные задачи, улучшать пользовательский опыт и постоянно изучать новые технологии, чтобы оставаться в курсе. Я увлечен созданием масштабируемых веб-приложений, которые являются как красивыми, так и поддерживаемыми. Ищу возможности для роста в команде, которая ценит качество, сотрудничество и инновации."
     }
   }
 }

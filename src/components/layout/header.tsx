@@ -22,7 +22,7 @@ const Header = ({ activeSection }: Props) => {
   const borderOpacity = useTransform(
     scrollY,
     [0, 100],
-    ["1px solid #fff0", "1px solid #fff1"],
+    ["1px solid #fff0", "1px solid #fff2"],
   );
   const headerPadding = useTransform(scrollY, [0, 100], ["2rem", "0.5rem"]);
   const logoScale = useTransform(scrollY, [0, 100], [1, 0.9]);
@@ -61,7 +61,7 @@ const Header = ({ activeSection }: Props) => {
           style={{ padding: headerPadding }}
         >
           {/* logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="#start" className="flex items-center gap-2">
             <motion.div
               className="gradient-text flex items-center text-4xl font-bold"
               style={{ scale: logoScale }}

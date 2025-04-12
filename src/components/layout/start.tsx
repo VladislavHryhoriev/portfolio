@@ -14,7 +14,7 @@ const Start = () => {
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <section className="relative h-screen overflow-hidden">
       <motion.div
         className="absolute inset-0"
         initial={{ scale: 1.2 }}
@@ -62,14 +62,14 @@ const Start = () => {
             transition={{ duration: DURATION, delay: DELAY + 0.6 }}
           >
             <Link
-              href="#projects"
-              className="bg-gradient-2 transform rounded-lg px-8 py-4 font-medium text-white transition-all hover:scale-105"
+              href="#work"
+              className="bg-gradient-2 rounded-lg bg-gradient-to-r px-8 py-4 font-medium text-white transition-shadow hover:opacity-95 hover:shadow-lg"
             >
               {t("viewProjects")}
             </Link>
             <Link
-              href="#contact"
-              className="transform rounded-lg border border-blue-600 px-8 py-4 font-medium text-white transition-all hover:scale-105 hover:bg-blue-600/20"
+              href="#contacts"
+              className="rounded-lg border border-blue-600 px-8 py-4 font-medium text-white hover:bg-blue-600/20"
             >
               {t("contactMe")}
             </Link>
@@ -95,7 +95,7 @@ const Start = () => {
           </motion.div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

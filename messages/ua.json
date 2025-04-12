@@ -1,35 +1,29 @@
 {
   "HomePage": {
-    "title": "Привіт, я [Ваше Ім'я]",
-    "description": "Full-stack розробник з пристрастю до створення сучасних веб-додатків",
-    "viewProjects": "Мої проекти",
-    "contactMe": "Зв'язатися",
-    "featuredProjects": "Вибрані проекти",
-    "learnMore": "Детальніше",
-    "skills": {
-      "title": "Навички",
-      "frontend": {
-        "title": "Frontend",
-        "description": "React, Next.js, TypeScript, Tailwind CSS"
-      },
-      "backend": {
-        "title": "Backend",
-        "description": "Node.js, Express, PostgreSQL, MongoDB"
-      },
-      "devops": {
-        "title": "DevOps",
-        "description": "Docker, AWS, CI/CD, Kubernetes"
-      }
+    "menu": {
+      "start": "Start",
+      "about": "About",
+      "work": "Work",
+      "contacts": "Contacts",
+      "cv": "CV"
     },
-    "projects": {
-      "project1": {
-        "title": "Проект 1",
-        "description": "Короткий опис першого проекту"
-      },
-      "project2": {
-        "title": "Проект 2",
-        "description": "Короткий опис другого проекту"
-      }
+    "start": {
+      "greeting": "Hello, I'm",
+      "title": "Vladislav Hryhoriev",
+      "description": "Full-stack developer passionate about building modern web applications",
+      "viewProjects": "View Projects",
+      "contactMe": "Contact Me",
+      "featuredProjects": "Featured Projects",
+      "learnMore": "Learn More"
+    },
+    "work": {
+      "title": "Projects",
+      "description": "Here are some of my projects",
+      "viewProject": "View Project"
+    },
+    "about": {
+      "title": "About Me",
+      "description": "Frontend developer with strong skills in React, Next.js, and modern UI tools like Tailwind CSS. I build responsive, high-performance interfaces with clean code and thoughtful architecture. I enjoy solving complex problems, improving user experience, and continuously learning new technologies to stay up to date. Passionate about building scalable web apps that are both beautiful and maintainable. Looking to grow as part of a team that values quality, collaboration, and innovation."
     }
   }
 }
