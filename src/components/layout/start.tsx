@@ -38,7 +38,7 @@ const Start = () => {
           className="text-center"
         >
           <motion.h1
-            className="text-gradient mb-6 text-7xl font-bold"
+            className="text-gradient mb-6 text-5xl font-bold md:text-7xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: DURATION, delay: DELAY + 0.2 }}
@@ -46,7 +46,7 @@ const Start = () => {
             {t("title")}
           </motion.h1>
           <motion.p
-            className="text-gradient mx-auto mb-8 max-w-2xl text-xl text-gray-300"
+            className="text-gradient mx-auto mb-8 max-w-2xl text-base text-gray-300 md:text-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: DURATION, delay: DELAY + 0.4 }}
@@ -56,20 +56,20 @@ const Start = () => {
 
           {/* Кнопки */}
           <motion.div
-            className="mb-12 flex justify-center gap-4"
+            className="mb-12 flex items-center justify-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: DURATION, delay: DELAY + 0.6 }}
           >
             <Link
               href="#work"
-              className="bg-gradient-2 rounded-lg bg-gradient-to-r px-8 py-4 font-medium text-white hover:opacity-90 active:opacity-90"
+              className="bg-gradient-2 rounded-lg bg-gradient-to-r px-6 py-3 font-medium text-white hover:opacity-90 active:opacity-90 md:px-8 md:py-4"
             >
               {t("viewProjects")}
             </Link>
             <Link
               href="#contacts"
-              className="rounded-lg border border-blue-600 px-8 py-4 font-medium text-white hover:bg-blue-600/20 active:bg-blue-600/20"
+              className="rounded-lg border border-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-600/20 active:bg-blue-600/20 md:px-8 md:py-4"
             >
               {t("contactMe")}
             </Link>
@@ -81,7 +81,7 @@ const Start = () => {
 
         {/* Скролл индикатор */}
         <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="absolute bottom-8 hidden md:block"
           style={{ opacity }}
         >
           <motion.div
