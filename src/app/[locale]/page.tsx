@@ -55,7 +55,7 @@ export default function HomePage() {
       <Header activeSection={activeSection} />
 
       {/* Секции */}
-      <div className="*:bg-background">
+      <div className="*:not-last:bg-background">
         <div ref={startRef} id="start">
           <Start />
         </div>

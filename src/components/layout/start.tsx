@@ -63,13 +63,13 @@ const Start = () => {
           >
             <Link
               href="#work"
-              className="bg-gradient-2 rounded-lg bg-gradient-to-r px-8 py-4 font-medium text-white transition-shadow hover:opacity-95 hover:shadow-lg"
+              className="bg-gradient-2 rounded-lg bg-gradient-to-r px-8 py-4 font-medium text-white hover:opacity-90 active:opacity-90"
             >
               {t("viewProjects")}
             </Link>
             <Link
               href="#contacts"
-              className="rounded-lg border border-blue-600 px-8 py-4 font-medium text-white hover:bg-blue-600/20"
+              className="rounded-lg border border-blue-600 px-8 py-4 font-medium text-white hover:bg-blue-600/20 active:bg-blue-600/20"
             >
               {t("contactMe")}
             </Link>
