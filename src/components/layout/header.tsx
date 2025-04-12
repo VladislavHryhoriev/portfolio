@@ -4,6 +4,18 @@ import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { Button } from "../ui/button";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "../ui/sheet";
+import { MenuIcon } from "lucide-react";
 
 interface Props {
   activeSection: string;
@@ -82,8 +94,8 @@ const Header = ({ activeSection }: Props) => {
             </motion.div>
           </Link>
 
-          {/* navigation */}
-          <div className="flex items-center gap-4 text-xl font-medium">
+          {/* navigation desktop */}
+          <div className="hidden items-center gap-4 text-xl font-medium md:flex">
             <div className="flex items-center uppercase">
               {navigation.map((item, index) => (
                 <Link
@@ -110,6 +122,20 @@ const Header = ({ activeSection }: Props) => {
               ))}
             </div>
           </div>
+
+          {/* navigation mobile */}
+          {/* <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline">
+                <MenuIcon />
+              </Button>
+            </SheetTrigger>
+            <SheetContent className="z-100 min-w-screen bg-black">
+              <SheetHeader>
+                <SheetTitle>Edit profile</SheetTitle>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet> */}
         </motion.div>
       </div>
     </motion.nav>

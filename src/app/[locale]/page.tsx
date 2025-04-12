@@ -6,7 +6,7 @@ import Start from "@/components/layout/start";
 import Work from "@/components/layout/work";
 import DELAY from "@/constants/DELAY";
 import { motion } from "framer-motion";
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 export default function HomePage() {
@@ -19,16 +19,11 @@ export default function HomePage() {
   const [contactsRef, contactsInView] = useInView({ threshold: 0.3 });
 
   useEffect(() => {
-    if (isVisible) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    if (isVisible) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
   }, [isVisible]);
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useLayoutEffect(() => window.scrollTo(0, 0), []);
 
   useEffect(() => {
     if (startInView) setActiveSection("#start");
@@ -60,14 +55,14 @@ export default function HomePage() {
       <Header activeSection={activeSection} />
 
       {/* Секции */}
-      <div className="">
-        <div ref={startRef} id="start" className="bg-background">
+      <div className="*:bg-background">
+        <div ref={startRef} id="start">
           <Start />
         </div>
-        <div ref={workRef} id="work" className="bg-background">
+        <div ref={workRef} id="work">
           <Work />
         </div>
-        <div ref={aboutRef} id="about" className="bg-background">
+        <div ref={aboutRef} id="about">
           <About />
         </div>
         <footer ref={contactsRef} id="contacts" className="h-screen">
